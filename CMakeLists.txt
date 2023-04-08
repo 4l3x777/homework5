@@ -68,14 +68,13 @@ target_link_libraries(
     gtest_main
 )
 
-target_link_options(simple_graphical_vector_editor PRIVATE -static -static-libgcc -static-libstdc++)
-
-target_link_options(test_simple_graphical_vector_editor_gtest PRIVATE -static -static-libgcc -static-libstdc++)
-
 if (MSVC)
     target_compile_options(simple_graphical_vector_editor PRIVATE /W4)
     target_compile_options(test_simple_graphical_vector_editor_gtest PRIVATE /W4)
 else ()
+    target_link_options(simple_graphical_vector_editor PRIVATE -static -static-libgcc -static-libstdc++)
+    target_link_options(test_simple_graphical_vector_editor_gtest PRIVATE -static -static-libgcc -static-libstdc++)
+
     target_compile_options(
         simple_graphical_vector_editor 
         PRIVATE
