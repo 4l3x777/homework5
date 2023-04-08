@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.25)
 
 set(PATCH_VERSION "1" CACHE INTERNAL "Patch version")
 set(PROJECT_VESRION 0.0.${PATCH_VERSION})
-project(print_ip VERSION ${PROJECT_VESRION})
+project(simple_graphical_vector_editor VERSION ${PROJECT_VESRION})
 
 include(FetchContent)
 
