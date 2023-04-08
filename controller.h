@@ -9,6 +9,10 @@
 #include <list>
 #include "model.h"
 
+#if !defined(__PRETTY_FUNCTION__) && !defined(__GNUC__)
+#define __PRETTY_FUNCTION__ __FUNCSIG__
+#endif
+
 /*!
 	\brief Controller class.
     \version 1.0

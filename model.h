@@ -10,6 +10,10 @@
 #include <iostream>
 #include "view.h"
 
+#if !defined(__PRETTY_FUNCTION__) && !defined(__GNUC__)
+#define __PRETTY_FUNCTION__ __FUNCSIG__
+#endif
+
 /*!
 	\brief Document class.
     \version 1.0
