@@ -1,3 +1,13 @@
+# vscode
+.vscode
+simple_graphical_vector_editor.exe
+simple_graphical_vector_editor_debug.exe
+test_simple_graphical_vector_editor_gtest.exe
+TODO
+
+# cmake
+/build/
+
 # Prerequisites
 *.d
 
